@@ -10,8 +10,8 @@
     --cor-branca: #fff;
 
     --fonte-padrão: Arial, Tahoma, Verdana;
-    --font-base: 16px;
-    --line-base: 17px;
+    --font-base: 17px;
+    --line-base: 38px;
     --radius: 5px;
     --espaco-padrao: 30px;
 }
@@ -84,10 +84,11 @@ footer{
     width: 100%;
     height: 25px;
     background: var(--cor-footer);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: block;
     clear: both;
+    text-align: center;
 }
 
 /*Configurações das páginas da pastas Pages*/
@@ -95,9 +96,10 @@ h2{
     line-height: 40px;
 }
 
-p, blockquote{
+p, blockquote, figcaption{
     text-align: center;
     line-height: 26px;
+
 }
 
 hr{
