@@ -73,8 +73,8 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;        /*muda o cursor ao passar por cima*/
-    background: var(--cor-footer);
-    color: var(--cor-branca);
+    background: var(--cor-header);
+    color: var(--cor-header);
     font-size: 14px;
     background-color: none;  /* remove o fundo*/
     font-size: 20px;
@@ -85,16 +85,7 @@ header {
 .Voltar {
     position: absolute;
     left: 15px;  
-    font-size: 24px;              
-    /*padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;        
-    background: var(--cor-footer);
-    color: var(--cor-branca);
-    font-size: 24px;
-    background: none;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;*/
+    font-size: 24px; 
+    background: var(--cor-header);
+    color: var(--cor-header);             
 }
