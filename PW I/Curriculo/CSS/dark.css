@@ -76,8 +76,25 @@ header {
     background: var(--cor-footer);
     color: var(--cor-branca);
     font-size: 14px;
-    background: none;  /* remove o fundo*/
+    background-color: none;  /* remove o fundo*/
     font-size: 20px;
     border: none;
     cursor: pointer;
+}
+
+.Voltar {
+    position: absolute;
+    left: 15px;  
+    font-size: 24px;              
+    /*padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;        
+    background: var(--cor-footer);
+    color: var(--cor-branca);
+    font-size: 24px;
+    background: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;*/
 }
