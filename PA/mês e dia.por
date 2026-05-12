@@ -7,35 +7,35 @@ programa {
     leia(dia)
 
     se (mes == 1) {
-      escreva("O mês é: ")
+      escreva("O mês é: Janeiro")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 2) {
-      escreva("O mês é: ")
+      escreva("O mês é: Fevereiro")
       se (dia > 28) {
-        escreva("O dia é inválido, tente outro")
+        escreva(" O dia é inválido, tente outro")
       } senao {
       escreva("\nO dia é: ", dia)
       }
     }
     se (mes == 3) {
-      escreva("O mês é: ")
+      escreva("O mês é: Março")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 4) {
-      escreva("O mês é: ")
+      escreva("O mês é: Abril")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 5) {
-      escreva("O mês é: ")
+      escreva("O mês é: Maio")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 6) {
-      escreva("O mês é: ")
+      escreva("O mês é: Junho")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 7) {
-      escreva("O mês é: ")
+      escreva("O mês é: Julho")
       escreva("\nO dia é: ", dia)
     }
     se (mes == 8) {
