@@ -18,15 +18,23 @@
     --cor-branca: #1e1e1e;
     --cor-borda: #444;
     --cor-sombra: #000;
+    --bg-image: url('../imagens/imagem currículo 3.jpg');
+    --overlay-opacity: 0.7;
 }
 
 * {
     transition: all 0.5s ease;
 }
 
-body {
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
+.dark html,
+.dark body{
+    background:
+     linear-gradient(
+        rgba(0, 0, 0, var(--overlay-opacity)),
+        rgba(0, 0, 0, var(--overlay-opacity))
+    ),
+    var(--bg-image) no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
