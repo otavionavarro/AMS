@@ -21,12 +21,18 @@ programa {
       pare
       caso 3:
       escreva("Você escolheu: Venda à Prazo de 60 dias")
+      pare
       caso 4:
       escreva("Você escolheu: Venda à Prazo de 90 dias")
+      pare
       caso 5:
       escreva("Você escolheu:")
+      pare
       caso 6:
       escreva("Você escolheu:")
+      pare
+      caso contrario:
+      escreva("Opção Inválida")
       
     }
 
