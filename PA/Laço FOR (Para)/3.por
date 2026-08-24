@@ -9,6 +9,7 @@ programa {
     para (inteiro i = 1; i <= quantidade; i++) {
     escreva("Digite um número: ")
     leia(n)
+
     se(i == 1) {
       maior = n
       vezes = 1
@@ -21,5 +22,4 @@ programa {
     escreva("\nA quantidade o número maior foi lido: ", vezes)
   }
     
-  }
 }
