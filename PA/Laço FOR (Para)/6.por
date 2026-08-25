@@ -1,17 +1,20 @@
 programa {
   funcao inicio() {
-    inteiro habitantes, eu, codigo
+    inteiro habitantes, i, codigo
     real maior, menor, media, kwh, consumomes, residencial = 0, comercial = 0, industrial = 0, total = 0
 
-    escreva("Digite a quantidade de habitantes de uma cidade: ")
+    escreva("Digite a quantidade de habitantes: ")
     leia(habitantes)
     escreva("Digite o valor do kwh: ")
     leia(kwh)
 
-    para (inteiro i = 1; i <= habitantes; i++) {
+    para (i = 1; i <= habitantes; i++) {
       escreva("\nQual o Consumo do mês: ")
       leia(consumomes)
-    escreva("1-Residencial")
+
+      escreva("Habitante ", i,":")
+
+    escreva("\n1-Residencial")
     escreva("\n2-Comercial")
     escreva("\n3-Industrial")
     escreva("\nescolha o número do seu código: ")
@@ -35,13 +38,12 @@ programa {
     se(codigo == 1) {
       residencial = residencial + consumomes
     }
-    se(codigo == 2) {
+    senao se(codigo == 2) {
       comercial = comercial + consumomes
     }
-    se(codigo == 3) {
+    senao se(codigo == 3) {
       industrial = industrial + consumomes
     }
-    pare
     }
     media = total/habitantes
 
