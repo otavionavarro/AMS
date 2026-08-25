@@ -10,8 +10,12 @@ programa {
     escreva("Digite um número: ")
     leia(n)
 
+    se (n > maior)
+    {
+        maior = n
+      }
+
     se(i == 1) {
-      maior = n
       vezes = 1
     } senao se(n == maior) {
       vezes = vezes + 1
