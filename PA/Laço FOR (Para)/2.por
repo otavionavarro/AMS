@@ -11,17 +11,15 @@ programa {
         soma= soma + n
       quantidade = quantidade + 1
       }
+      senao {
+        escreva("Opção Inválida, tente um número inteiro positivo")
+        pare
+      }
     }
       se (quantidade > 0) {
         media= soma/quantidade
         escreva("A média dos números é: ", media)
       }
-      senao {
-        escreva("Opção Inválida, tente um número inteiro positivo")
-      }
-    
-
-
     
   }
 }
