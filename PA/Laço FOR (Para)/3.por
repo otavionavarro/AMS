@@ -13,9 +13,11 @@ programa {
     se (n > maior)
     {
         maior = n
+        vezes = 1
       }
 
-    se(i == 1) {
+    senao se(i == 1) {
+      maior = n
       vezes = 1
     } senao se(n == maior) {
       vezes = vezes + 1
