@@ -9,4 +9,11 @@
     #titulo {
         font-size: 1.5em;
     }
+
+    #subtitulo {
+        font-size: 1em;
+    }
+    fieldset.grupo .campo {
+        float: none;
+    }
 }
