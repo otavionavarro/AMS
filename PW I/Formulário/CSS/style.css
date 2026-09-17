@@ -47,3 +47,136 @@ form{
     text-align: left;
 }
 
+/*Elemento main*/
+main {
+    width: 100%;
+    max-width: var(--tamanho-max-main);
+}
+
+/*Permite definir uma largura e uma altura no elemento*/
+#check{
+    display: inline-block;
+}
+
+/*Elementos de tag <fieldset>*/
+fieldset{
+    border: 0px;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 2% 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Elementos de tags <body>, <input>, <Select>, <textarea> e <button>*/
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--cor-secundaria);
+    border-radius: var(--raio-borda);
+}
+
+.grupo::before, .grupo::after {
+    display: table;
+}
+
+.grupo::after{
+    clear: both;
+}
+
+.campo{
+    margin-bottom: var(--espacamento-medio);
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: var(--cor-secundaria);
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    display: block;
+    margin-right: var(--espacamento-grande);
+}
+
+.campo input[type="text"], .campo input[type="text"], .campo select, .campo textarea {
+    padding: o.3em;
+    border: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: var(--cor-focus);
+}
+
+#experiencia {
+    margin-top: var(--espacamento-grande);
+}
+
+.campo label[for="experiencia"] {
+    margin-top: var(--espacamento-grande);
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.botao {
+        font-size: 1.2em;
+        background: var(--cor-secundaria);
+        border: 0;
+        margin: 1em auto 0;
+        color: #ffffff;
+        padding: 0.5em 1.5em;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+        cursor: pointer;
+        display: block; 
+    }
+
+    .botao:hover{
+        background: var(--cor-hover);
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: none;
+    }
+
+    .botao, select {
+        cursor: pointer;
+    }
+
+    .button {
+        text-align: center;
+        margin-top: var(--espacamento-grande);
+    }
+
+    hr {
+        width: 90%;
+        max-width: var(--tamanho-max-form);
+        margin: 1em auto;
+    }
+
+    .footer-center {
+        text-align: center;
+        width: 100%;
+        margin-top: 3em;
+        padding: 2em 1em;
+        background-color: var(--cor-fundo);
+    }
+
+    #tecnologias {
+        margin-top: var(--espacamento-médio);
+        
+    }
