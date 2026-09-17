@@ -25,3 +25,25 @@
     text-align: center;
     margin: 0 auto 0.5cm;
 }
+
+/*Elementos com o ID subtítulos*/
+#subtitulos {
+    font-family: sans-serif;
+    color: var(--cor-primaria);
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0 auto 1.5em;
+}
+
+form{
+    width: 90%;
+    max-width: var(--tamanho-max-form);
+    padding: 1em;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    background-color: var(--cor-formulario);
+    margin: 0 auto;
+    text-align: left;
+}
+
