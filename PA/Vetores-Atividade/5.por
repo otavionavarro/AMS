@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    inteiro n, vetor[10], maior, posicao, i
+    inteiro vetor[10], maior, posicao, i
     
     para (i = 0; i < 10; i++) {
       escreva("Digite o ", i+1,"° número: ")
