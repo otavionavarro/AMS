@@ -8,15 +8,16 @@ programa {
       escreva("Digite um número (0 para parar): ")
       leia(n)
       se (n == 0) {
-        lista[qtd] = n
-        qtd++
+        pare
       }
+      lista[qtd] = n
+        qtd++
+    }
       escreva("Elementos: ")
       para (inteiro i = 0; i < qtd; i++) {
         escreva(lista[i], " ")
       }
       escreva("\n qtd = ", qtd, "\n")
-    }
     
   }
 }
