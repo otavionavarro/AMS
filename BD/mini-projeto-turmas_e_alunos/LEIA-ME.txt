@@ -1,0 +1,44 @@
+PROJETO ESCOLA - ALUNOS E TURMAS
+
+REQUISITOS
+- XAMPP com Apache, MySQL e PHP.
+- PHP com extensao PDO MySQL habilitada.
+
+INSTALACAO
+1. Extraia a pasta projeto_escola_modificado para C:\xampp\htdocs\
+2. Abra o painel do XAMPP e inicie Apache e MySQL.
+3. Acesse http://localhost/phpmyadmin/
+4. Importe o arquivo banco_escola.sql.
+5. Acesse http://localhost/projeto_escola_modificado/
+
+BANCO DE DADOS
+- turmas: tabela principal com id e nome.
+- alunos: tabela principal com id, nome, email e turma_id.
+- alunos.turma_id e uma chave estrangeira que referencia turmas.id.
+- fontes: guarda titulo, URL e finalidade das documentacoes consultadas.
+
+COMANDOS SQL PRESENTES
+- INSERT: cadastra turmas, alunos e fontes; o PHP tambem usa INSERT para novos alunos/turmas.
+- SELECT: consulta registros e lista as informacoes.
+- UPDATE: atualiza os dados de um aluno na pagina editar.php.
+- JOIN: listar.php combina alunos e turmas para exibir o nome da turma.
+- Prepared Statements: as operacoes com dados recebidos do usuario usam PDO::prepare() e execute().
+
+SEGURANCA
+As consultas que recebem dados externos usam parametros preparados. Isso ajuda a impedir SQL Injection.
+A conexao usa PDO e desativa prepared statements emulados.
+O projeto tambem usa token CSRF nos formularios e escapa os dados apresentados no HTML.
+
+CONFIGURACAO
+O arquivo conexao.php esta configurado para XAMPP padrao:
+servidor localhost, banco escola, usuario root e senha vazia.
+Se seu MySQL usar outra senha, altere a variavel $password.
+
+FONTES REGISTRADAS NA TABELA fontes
+- https://www.php.net/manual/pt_BR/book.pdo.php
+- https://www.php.net/manual/pt_BR/pdo.prepare.php
+- https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html
+- https://dev.mysql.com/doc/refman/8.0/en/select.html
+
+OBSERVACAO
+Os registros de exemplo usam enderecos example.com, apenas para demonstracao.
